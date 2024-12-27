@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+            margin: 20px;
+
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px ;
+              
+        }
+
+        div#cxa {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        div#cxb {
+            flex-shrink: 1;
+            flex-grow: 0;
+            
+        }
+
+        div#cxc {
+            flex-shrink: 1;
+            flex-grow: 0;
+            
+        }
+
+        /*------------------------*/
+
+        div#cxa1 {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        div#cxb1 {
+            flex-shrink: 1;
+            flex-grow: 2;
+            
+        }
+
+        div#cxc1 {
+            flex-shrink: 1;
+            flex-grow: 1;
+            
+        }
+
+        /*------------------------*/
+
+        
+        div#cxa2 {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        div#cxb2 {
+            flex-shrink: 0;
+            flex-grow: 1;
+            
+        }
+
+        div#cxc2 {
+            flex-shrink: 2;
+            flex-grow: 1;
+            
+        }
+    </style>
+</head>
+<body>
+
+        <div class="container">
+            <div class="item" id="cxa">A</div>
+            <div class="item" id="cxb">B</div>
+            <div class="item" id="cxc">C</div>
+            
+        </div>
+
+        <div class="container">
+            <div class="item" id="cxa1">A</div>
+            <div class="item" id="cxb1">B</div>
+            <div class="item" id="cxc1">C</div>
+            
+        </div>
+
+        <div class="container">
+            <div class="item" id="cxa2">A</div>
+            <div class="item" id="cxb2">B</div>
+            <div class="item" id="cxc2">C</div>
+            
+        </div>
+
+
+
+
+
+    
+</body>
+</html>
